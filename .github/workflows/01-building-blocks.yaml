@@ -8,11 +8,11 @@ jobs:
       - name: Say hello
         run: echo "Hello World!"
   echo-goodbye:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
-      - name: Succesfull step
+      - name: Failed step
         run: |
-          echo "I will succed"
-          exit 0
+          echo "I will fajil"
+          exit 1
       - name: Say goodbye
         run: echo "Goodbye!"
