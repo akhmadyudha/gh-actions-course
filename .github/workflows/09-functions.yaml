@@ -8,8 +8,9 @@ jobs:
   echo1:
     runs-on: ubuntu-latest
     steps:
+      - name: Sleep for 20 seconds
+        run: sleep 20
       - name: Failing step
-        id: demo_1
         run: exit 1
       - name: I will be skipped
         if: ${{ !failure() }}
