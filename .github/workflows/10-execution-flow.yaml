@@ -26,13 +26,13 @@ jobs:
     steps:
       - name: Deploying to nonprod
         run: echo "Deploying to nonprod..."
-  e2etest:
+  e2e-test:
     runs-on: ubuntu-latest
     needs:
       - deploy-nonprod
     steps:
       - name: Running E2D tests
-      run: echo "Running E2E tests"
+        run: echo "Running E2E tests"
   load-tests:
     runs-on: ubuntu-latest
     needs:
